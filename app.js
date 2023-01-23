@@ -7,19 +7,31 @@ console.log(screen);
 
 let elm_menu = document.querySelector("#btnMenu");
 
-console.log(elm_menu);
+let isOffMenu = true;
 elm_menu.addEventListener('click',clickMenu)
 function clickMenu(){
-    console.log("teatClickMenu");
+    if(isOffMenu===true){
+isOffMenu=false;
+    console.log("click");
 let elmNavHeader= document.querySelector("#navHeader");
 let elmHeader = document.querySelector("header")
-console.log(elmNavHeader);
 elmHeader.insertAdjacentHTML("beforebegin",`
+      <div id="navMenu">
       <div class="w-10 h-10 fixed top-28 left-4 rounded-full bg-gray-500"></div>
       <div class="w-10 h-10 fixed top-24 left-16  rounded-full bg-gray-500"></div>
       <div class="w-10 h-10 fixed top-16 left-28  rounded-full bg-gray-500"></div>
       <div class="w-10 h-10 fixed top-4 left-36 rounded-full bg-gray-500"></div>
+</div>
 `)
+    }else{
+        let menuFix =document.querySelector("#navMenu");
+        menuFix.remove();
+        isOffMenu=true;
+        console.log(menuFix);  
+        console.log("click2");
+    }
+
+    
 }
 // elm_menu.onclick=()=>{
 //     console.log("test");
