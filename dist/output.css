@@ -892,8 +892,20 @@ video {
   height: 24rem;
 }
 
+.h-52 {
+  height: 13rem;
+}
+
 .h-40 {
   height: 10rem;
+}
+
+.h-60 {
+  height: 15rem;
+}
+
+.h-0 {
+  height: 0px;
 }
 
 .max-h-screen {
@@ -944,6 +956,18 @@ video {
   width: 100vw;
 }
 
+.w-2\/5 {
+  width: 40%;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
+.w-1\/3 {
+  width: 33.333333%;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -974,6 +998,11 @@ video {
 
 .border-separate {
   border-collapse: separate;
+}
+
+.-rotate-12 {
+  --tw-rotate: -12deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .transform {
@@ -1942,164 +1971,25 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/backgrand\/me3project\.jpg\'\)\] {
-  background-image: url('/backgrand/me3project.jpg');
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\/backgrand\/porgect\/Screenshot_20230201_185947\.png\'\)\] {
-  background-image: url('./backgrand/porgect/Screenshot_20230201_185947.png');
+.bg-\[url\(\'\/backgrand\/me3project\.jpg\'\)\] {
+  background-image: url('/backgrand/me3project.jpg');
 }
 
 .bg-\[url\(\'\/backgrand\/porgect\/Screenshot_20230201_185947\.png\'\)\] {
   background-image: url('/backgrand/porgect/Screenshot_20230201_185947.png');
 }
 
-.bg-\[url\(\'\/backgrand\/porgect\/\.png\'\)\] {
-  background-image: url('/backgrand/porgect/.png');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\/S\.png\'\)\] {
-  background-image: url('/backgrand/porgect/S.png');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\/Sc\.png\'\)\] {
-  background-image: url('/backgrand/porgect/Sc.png');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\/Scre\.png\'\)\] {
-  background-image: url('/backgrand/porgect/Scre.png');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\/Scree\.png\'\)\] {
-  background-image: url('/backgrand/porgect/Scree.png');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\/Screensh\.png\'\)\] {
-  background-image: url('/backgrand/porgect/Screensh.png');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\/Screenshot\.png\'\)\] {
-  background-image: url('/backgrand/porgect/Screenshot.png');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\/\'\)\] {
-  background-image: url('/backgrand/porgect/');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\/Sc\'\)\] {
-  background-image: url('/backgrand/porgect/Sc');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\/Scre\'\)\] {
-  background-image: url('/backgrand/porgect/Scre');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\/Scree\'\)\] {
-  background-image: url('/backgrand/porgect/Scree');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\/Screensho\'\)\] {
-  background-image: url('/backgrand/porgect/Screensho');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\'\)\] {
-  background-image: url('/backgrand/porgect');
-}
-
 .bg-\[url\(\'\/backgrand\/porgect\/Screenshot_20230201_190102\.png\'\)\] {
   background-image: url('/backgrand/porgect/Screenshot_20230201_190102.png');
 }
 
-.bg-\[url\(\'\/backgrand\/porgect\/S\'\)\] {
-  background-image: url('/backgrand/porgect/S');
-}
-
 .bg-\[url\(\'\/backgrand\/porgect\/Screenshot_20230201_190523\.png\'\)\] {
   background-image: url('/backgrand/porgect/Screenshot_20230201_190523.png');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\/\.\/\'\)\] {
-  background-image: url('/backgrand/porgect/./');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\/hi\'\)\] {
-  background-image: url('/backgrand/porgect/hi');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\/h\'\)\] {
-  background-image: url('/backgrand/porgect/h');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\/his\'\)\] {
-  background-image: url('/backgrand/porgect/his');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\/the\'\)\] {
-  background-image: url('/backgrand/porgect/the');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\/t\'\)\] {
-  background-image: url('/backgrand/porgect/t');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\/thr\'\)\] {
-  background-image: url('/backgrand/porgect/thr');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\/theh\'\)\] {
-  background-image: url('/backgrand/porgect/theh');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\/thehis\'\)\] {
-  background-image: url('/backgrand/porgect/thehis');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\/\.\'\)\] {
-  background-image: url('/backgrand/porgect/.');
-}
-
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
-
-.bg-\[url\(\'\/\'\)\] {
-  background-image: url('/');
-}
-
-.bg-\[url\(\'\/ba\'\)\] {
-  background-image: url('/ba');
-}
-
-.bg-\[url\(\'\/back\'\)\] {
-  background-image: url('/back');
-}
-
-.bg-\[url\(\'\.\/\'\)\] {
-  background-image: url('./');
-}
-
-.bg-\[url\(\'\.\/backgrand\'\)\] {
-  background-image: url('./backgrand');
-}
-
-.bg-\[url\(\'\.\/backgrand\/\'\)\] {
-  background-image: url('./backgrand/');
-}
-
-.bg-\[url\(\'\.\/backgrand\/porgect\'\)\] {
-  background-image: url('./backgrand/porgect');
-}
-
-.bg-\[url\(\'\.\/backgrand\/porgect\/\'\)\] {
-  background-image: url('./backgrand/porgect/');
-}
-
-.bg-\[url\(\'\.\/backgrand\/porgect\/theHistoy\.png\'\)\] {
-  background-image: url('./backgrand/porgect/theHistoy.png');
-}
-
-.bg-\[url\(\'\/backgrand\/porgect\/theHistoy\.png\'\)\] {
-  background-image: url('/backgrand/porgect/theHistoy.png');
 }
 
 .decoration-slice {
@@ -2686,6 +2576,11 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.hue-rotate-15 {
+  --tw-hue-rotate: hue-rotate(15deg);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .invert {
   --tw-invert: invert(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -2767,10 +2662,15 @@ video {
   content: var(--tw-content);
 }
 
-/* #testz{
-    transform: rotate3d(0, 1, 0, 60deg);
+#test{
+  /* transform: rotateZ(60deg); */
+  -webkit-clip-path:path("M 1.336 6.683 L 1.336 221.383 L 446.271 188.638 L 446.271 48.784 L 1.336 6.683 Z") ;
+          clip-path:path("M 1.336 6.683 L 1.336 221.383 L 446.271 188.638 L 446.271 48.784 L 1.336 6.683 Z") ;
+  background-image: url('/backgrand/porgect/Screenshot_20230201_190523.png')
+      ;
+  background-size: cover;
+  background-position: 42% ;
 }
- */
 
 .hover\:font-bold:hover {
   font-weight: 700;
