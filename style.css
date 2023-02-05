@@ -2,11 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-#test{
-    /* transform: rotateZ(60deg); */
-      clip-path:path("M 1.336 6.683 L 1.336 221.383 L 446.271 188.638 L 446.271 48.784 L 1.336 6.683 Z") ;
-      background-image: url('/backgrand/porgect/Screenshot_20230201_190523.png')
-      ;background-size: cover;
-      background-position: 42% ;
- 
-    }
