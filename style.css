@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+ /* #project1{
+    color: brown;
+    display: none;
+} 
+#project1:hover{
+    display: none;
+
+   background-color: black;
+}  */

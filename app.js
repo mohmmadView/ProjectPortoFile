@@ -33,6 +33,17 @@ elmHeader.insertAdjacentHTML("beforebegin",`
 
     
 }
+let titleSite = document.querySelector(".titleSite");
+let project1El = document.querySelector(".project1");
+project1El.addEventListener("mouseenter",()=>{
+titleSite.innerHTML="the history of iran";
+})
+project1El.addEventListener("mouseleave",()=>{
+titleSite.innerHTML="";
+})
+
+
+console.log(project1El);
 // elm_menu.onclick=()=>{
 //     console.log("test");
 // // let ulElmMenu = document.createElement("ul");
