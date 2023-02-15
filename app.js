@@ -1,3 +1,4 @@
+console.log(anime);
 document.addEventListener('load', (event) => {
  console.log(screen.height);
 console.log(screen.width);
