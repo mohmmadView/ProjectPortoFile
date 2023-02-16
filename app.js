@@ -34,6 +34,7 @@ elmHeader.insertAdjacentHTML("beforebegin",`
   //   console.log("test");
 
 
+
   // }
 // window.addEventListener("scroll",(event)=>{
 
@@ -43,11 +44,25 @@ elmHeader.insertAdjacentHTML("beforebegin",`
 // console.log(elmMySkill);
 //  }
 // });
-var mySkillElm = document.querySelector('#mySkill')
-var myAboutElm = document.querySelector('#AboutMe')
+var mySkillElm = document.querySelector('#mySkill');
+var myAboutElm = document.querySelector('#AboutMe');
+var myProject1 = document.querySelector("#project1");
+var myProject2 = document.querySelector("#project2");
+var myProject3 = document.querySelector("#project3");
+var myProject4 = document.querySelector("#project4");
 window.onscroll=()=>{
-  winScroll(678,mySkillElm,"animate__backInLeft");
-  winScroll(678,myAboutElm,"animate__backInRight");
+  // if(window.screenY > 96){
+  //   // window.URL('#mySkill&About')
+  //   window.URLSearchParams
+  //   console.log("test");
+  // }
+  // winScroll()
+  winScroll(1100,myProject4,"animate__backInUp")
+  winScroll(1100,myProject3,"animate__backInUp")
+  winScroll(1100,myProject2,"animate__backInDown")
+  winScroll(1100,myProject1,"animate__backInDown")
+  winScroll(578,mySkillElm,"animate__backInLeft");
+  winScroll(578,myAboutElm,"animate__backInRight");
   // if (window.scrollY > 678) {
   //   mySkillElm.classList.add("animate__backInLeft");
   // } else {
@@ -119,7 +134,25 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+// Wrap every letter in a span
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml6 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
 // elm_menu.onclick=()=>{
 //     console.log("test");
 // // let ulElmMenu = document.createElement("ul");

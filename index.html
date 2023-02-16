@@ -30,6 +30,10 @@
       <div class="w-10 h-10 fixed  rounded-full bg-gray-500"></div> -->
       
       <!-- </nav> -->
+      <div class="flex justify-center ">
+         <a class="text-white p-3 border-x border-yellow-600 hover:bg-yellow-500 rounded-2xl border-dotted" href="#mySkill&About">mySkill</a>
+         <a class="text-white p-3 border-x border-yellow-600 hover:bg-yellow-500 rounded-2xl border-dotted" href="#myProject">myProject</a>
+      </div>
     </header>
 
    
@@ -45,7 +49,11 @@
 <!--? TitleName -->
 <div class="flex flex-col 2xl:mt-10">
 
-<div class="text-black font-bold text-3xl text-center mt-4">Mohmmad Rahgoshahi</div>
+<h1 class="text-yellow-300 font-bold text-3xl text-center mt-4 ml6">
+ <span class="text-wrapper" >
+   <span class="letters ">Mohmmad Rahgoshahi</span>
+ </span> </h1>
+
 <h1 class="ml1 relative">
 <div class="text-black text-center italic mb-3 text-2xl letters "> Fronted Developer</div>
 </h1>
@@ -312,20 +320,20 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum cum tenetur pari
   <!-- <div class="w-100 h-96 bg-slate-100/30"></div> -->
 </div>
 <!--? start  project -->
-<div class=" w-screen h-screen my-auto mx-auto">
+<div id="myProject" class=" w-screen h-screen my-auto mx-auto">
 <div class="text-center p-5 text-5xl font-extrabold ...">
   <span class="bg-clip-text bg-black text-transparent bg-gradient-to-r from-orange-700 to-yellow-500  hover:from-yellow-500 hover:to-red-500">
     My Projects
   </span>
 </div>
-<div class="w-10/12 h-2/4  mx-auto grid grid-cols-2 ">
-  <div  class="flex justify-center project1">
+<div class="w-10/12 h-2/4 animate__animated mx-auto grid grid-cols-2 ">
+  <div id="project1" class="animate__animated  flex justify-center project1">
 
           <a href="../history-of-iran-tour/index.html" class="w-4/5 h-4/5  self-center   bg-clip-border  border-4 border-outline border-yellow-600  hover:border-white p-5  border-outline  ring-yellow-200 hover:ring-black ring ring-3 hover:ring-8 rounded-xl mx-3  bg-[url('/backgrand/porgect/theHistoy.png')] bg-cover bg-center">
             <h1  class="text-center titleSite text-2xl text-yellow-600 z-10"></h1>
           </a>
   </div>
-   <div class="flex justify-center  ">
+   <div id="project2" class="flex animate__animated justify-center  ">
           <a href="#" class="w-4/5 h-4/5 self-center border-4 border-outline border-yellow-600 hover:border-white ring-yellow-200 hover:ring-black ring ring-3 hover:ring-8 rounded-xl mx-3 bg-clip-border bg-[url('/backgrand/porgect/Screenshot_20230201_190523.png')] bg-cover bg-center"></a>
   </div>
 </div>
@@ -333,10 +341,10 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum cum tenetur pari
 
 
 <div class="w-10/12 h-2/4 mx-auto grid grid-cols-2">
-  <div class="flex justify-center">
+  <div id="project3" class="flex animate__animated justify-center">
           <a href="../libaryAnimation/" class="w-4/5 h-4/5 bg-clip-border border-4 border-outline   border-yellow-600 hover:border-white ring-yellow-200 ring ring-3 hover:ring-black  hover:ring-8  rounded-xl mx-3 bg-[url('/backgrand/porgect/Screenshot_20230201_190102.png')] bg-cover bg-center"></a>
   </div>
-   <div class="flex justify-center">
+   <div id="project4" class=" flex justify-center animate__animated">
           <a href="../portofile/index.html" class="w-4/5 h-4/5 bg-clip-border border-4 border-outline border-yellow-600 hover:border-white border-outline ring ring-3   ring-yellow-200 hover:ring-black hover:ring-8  rounded-xl mx-3 bg-[url('/backgrand/porgect/Screenshot_20230201_185947.png')] bg-cover bg-center"></a>
   </div>
 </div>
@@ -346,6 +354,7 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum cum tenetur pari
 
 
     </main>
+
     <script src="./node_modules/animejs/lib/anime.min.js"></script>
     <script src="./app.js"></script>
 </body>
