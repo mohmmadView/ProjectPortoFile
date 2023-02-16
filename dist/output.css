@@ -665,34 +665,6 @@ video {
   bottom: 2.5rem;
 }
 
-.left-20 {
-  left: 5rem;
-}
-
-.left-40 {
-  left: 10rem;
-}
-
-.left-48 {
-  left: 12rem;
-}
-
-.left-52 {
-  left: 13rem;
-}
-
-.left-56 {
-  left: 14rem;
-}
-
-.left-60 {
-  left: 15rem;
-}
-
-.left-auto {
-  left: auto;
-}
-
 .isolate {
   isolation: isolate;
 }
@@ -744,6 +716,11 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mx-3 {
@@ -905,10 +882,6 @@ video {
   height: 12rem;
 }
 
-.h-3 {
-  height: 0.75rem;
-}
-
 .h-auto {
   height: auto;
 }
@@ -937,24 +910,12 @@ video {
   height: 24rem;
 }
 
-.h-3\/6 {
-  height: 50%;
-}
-
-.h-56 {
-  height: 14rem;
-}
-
 .h-2\/4 {
   height: 50%;
 }
 
 .h-40 {
   height: 10rem;
-}
-
-.h-1 {
-  height: 0.25rem;
 }
 
 .max-h-screen {
@@ -1005,24 +966,8 @@ video {
   width: 100vw;
 }
 
-.w-3\/6 {
-  width: 50%;
-}
-
-.w-2\/5 {
-  width: 40%;
-}
-
 .w-10\/12 {
   width: 83.333333%;
-}
-
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-24 {
-  width: 6rem;
 }
 
 .flex-shrink {
@@ -1959,14 +1904,14 @@ video {
   background-color: rgb(253 224 71 / 0.75);
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .bg-yellow-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-slate-600 {
@@ -2022,16 +1967,6 @@ video {
   background-color: rgb(241 245 249 / 0.3);
 }
 
-.bg-slate-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-}
-
-.bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-}
-
 .bg-slate-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
@@ -2050,20 +1985,20 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.bg-\[url\(\'\/backgrand\/porgect\/Screenshot_20230201_190102\.png\'\)\] {
-  background-image: url('/backgrand/porgect/Screenshot_20230201_190102.png');
+.bg-\[url\(\'\/backgrand\/porgect\/theHistoy\.png\'\)\] {
+  background-image: url('/backgrand/porgect/theHistoy.png');
 }
 
 .bg-\[url\(\'\/backgrand\/porgect\/Screenshot_20230201_190523\.png\'\)\] {
   background-image: url('/backgrand/porgect/Screenshot_20230201_190523.png');
 }
 
-.bg-\[url\(\'\/backgrand\/porgect\/Screenshot_20230201_185947\.png\'\)\] {
-  background-image: url('/backgrand/porgect/Screenshot_20230201_185947.png');
+.bg-\[url\(\'\/backgrand\/porgect\/Screenshot_20230201_190102\.png\'\)\] {
+  background-image: url('/backgrand/porgect/Screenshot_20230201_190102.png');
 }
 
-.bg-\[url\(\'\/backgrand\/porgect\/theHistoy\.png\'\)\] {
-  background-image: url('/backgrand/porgect/theHistoy.png');
+.bg-\[url\(\'\/backgrand\/porgect\/Screenshot_20230201_185947\.png\'\)\] {
+  background-image: url('/backgrand/porgect/Screenshot_20230201_185947.png');
 }
 
 .from-orange-700 {
@@ -2072,18 +2007,8 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-pink-500 {
-  --tw-gradient-from: #ec4899;
-  --tw-gradient-to: rgb(236 72 153 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .to-yellow-500 {
   --tw-gradient-to: #eab308;
-}
-
-.to-violet-500 {
-  --tw-gradient-to: #8b5cf6;
 }
 
 .decoration-slice {
@@ -2804,10 +2729,6 @@ video {
 
 .hover\:to-red-500:hover {
   --tw-gradient-to: #ef4444;
-}
-
-.hover\:bg-clip-padding:hover {
-  background-clip: padding-box;
 }
 
 .hover\:font-bold:hover {
