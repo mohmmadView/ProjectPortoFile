@@ -30,3 +30,11 @@
     display: inline-block;
     line-height: 1em;
   }
+#serviceHtml{
+  background-image: url("/backgrand/Background-18.jpg");
+  background-attachment: fixed;
+}
+  /* .mySkillClip{
+    background-image: url("backgrand/html-elements.jpg");
+  
+  } */
