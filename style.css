@@ -11,6 +11,11 @@
 
    background-color: black;
 }  */
+body{
+  background-image: url('/backgrand/svgback2.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .ml6 {
     position: relative;
     font-weight: 700;

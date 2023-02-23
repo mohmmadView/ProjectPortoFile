@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
 </head>
 
-<body class="bg-slate-700 bg-cover ">
+<body class=" ">
 
      
      <header class="w-4/5 mx-auto mt-3">
@@ -39,7 +39,8 @@
    
     <main>
  <div class="w-full  grid grid-cols-2  animate__animated animate__zoomIn">
-  <div class="col h-36">
+  <div>
+  <div class="col  h-36">
            <!--! imageProfile -->
     <div class="flex mb-12 mt-16 justify-center">
   <div class=" w-52 h-48 bg-[url('/backgrand/me3project.jpg')] bg-cover mt-4 ring-4 ring-black rounded-full border-2  border-yellow-400 relative z-20"></div>
@@ -49,13 +50,13 @@
 <!--? TitleName -->
 <div class="flex flex-col 2xl:mt-10">
 
-<h1 class="text-yellow-300 font-bold text-3xl text-center mt-4 ml6">
+<h1 class="text-yellow-300  font-bold text-3xl text-center mt-4 ml6">
  <span class="text-wrapper" >
-   <span class="letters ">Mohmmad Rahgoshahi</span>
+   <span class="letters  p-8 rounded-full  border-double border-8 border-black  ">Mohmmad Rahgoshahi</span>
  </span> </h1>
 
-<h1 class="ml1 relative">
-<div class="text-black text-center italic mb-3 text-2xl letters "> Fronted Developer</div>
+<h1 class="ml1 relative flex justify-center">
+<span class="text-black text-center italic mb-3 text-2xl letters  border-black border-2 border-dashed p-2 rounded-xl "> Fronted Developer</>
 </h1>
 <!--? TitleName -->
 <!--* ICON -->
@@ -154,20 +155,20 @@
 <!--* ICON -->
 </div>
 <div   class="flex justify-evenly 2xl:mt-20 mt-8">
-<div class="w-32 2xl:w-44 2xl:p-3 border-2 border-black p-1 rounded-2xl text-center text-black bg-yellow-400 ">Portfilo</div>
-<div class="w-32 2xl:w-44 2xl:p-3 border-2 border-black p-1 rounded-2xl text-center text-black bg-yellow-400" >Hire Me</div>
+<div class="w-32 2xl:w-44 2xl:p-3 border-2 border-yellow-500 p-1 rounded-2xl text-center text-yellow-500 bg-black ">Portfilo</div>
+<div class="w-32 2xl:w-44 2xl:p-3 border-2 border-yellow-500 p-1 rounded-2xl text-center text-yellow-500 bg-black" >Hire Me</div>
 </div>
   </div>
-  
+  </div>
 <!-- ?img_libaryBook -->
   
-  <div class="col h-auto   ">
-<img src="./backgrand/librarybook.png"  class="w-full max-h-screen object-top" alt="">
+  <div class="w-full p-20 pb-48 h-screen">
+<img src="./backgrand/librarybook.png"  class="" alt="">
 
   </div>
 </div>
   <!--?================== svg-Arrow ==================-->
-<div class="w-full absolute bottom-10 flex justify-center animate__animated animate__backInUp text-white max-xl:bottom-0">
+<div class="w-full absolute bottom-10 flex justify-center animate__animated animate__backInUp  text-white max-xl:bottom-0">
   <svg width="80px" height="130px" viewBox="0 0 100 180" id="SVGRoot" version="1.1" enable-background="new" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
       <rect height="53.12819" id="rect862" width="71.57005" x="226.00165" y="24.10057"/>
@@ -212,9 +213,9 @@
 </div>
 <div class="w-full h-full  grid  grid-cols-2 ">
 
-  <div id="mySkill"  class="animate__animated bg-slate-600 mx-auto w-4/5 h-4/5" >
+  <div id="mySkill"  class="animate__animated p-2 rounded-lg border-4 border-blue-800 border-dotted ring-4 ring-black bg-zinc-700/30 shadow-lg shadow-blue-700 hover:shadow-xl hover:shadow-blue-800 mx-auto w-4/5 h-4/5" >
 
-<h1 class="w-full text-4xl text-yellow-500 font-bold text-center ">My Skill</h1>
+<h1 class="w-full text-4xl text-yellow-500 font-bold text-center">My Skill</h1>
           <!--! Skill Html -->
 
   <div class="w-full flex justify-center ">
@@ -304,15 +305,13 @@
 <!--! About Me -->
 <!--------------->
 
-<div id="AboutMe" class="animate__animated  bg-gray-200/20  w-4/5 h-4/5 mx-auto">
-<h1 class="w-full text-4xl mb-5 text-yellow-500 font-bold text-center">About Me</h1>
-<div class="w-full h-full flex justify-center">
-  <p class="w-full h-full text-white text-center">
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum cum tenetur pariatur ipsa accusantium,
- nemo, odit alias quas laudantium, voluptatibus repellat! Quisquam, ea obcaecati.
-  Perspiciatis asperiores ea sapiente illo repellat!
-</p>
-</div>
+<div id="AboutMe" class="animate__animated  w-4/5 h-4/5 mx-auto">
+<h1 class="w-full text-4xl mb-5 text-yellow-500 absolute top-16 font-bold text-center">About Me</h1>
+<svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+  <defs></defs>
+  <path style="stroke: rgba(0, 0, 0, 0.06); fill: rgba(3, 7, 61, 0.8);" d="M 191.918 25.997 C 164.41 -1.187 76.336 34.602 54.579 6.173 C 6.876 -14.55 -4.748 53.721 6.9 111.311 C 6.515 111.559 7.097 140.797 37.013 179.771 C 64.36 215.398 107.293 217.029 107.293 207.728 C 134.716 176.062 125.406 163.389 188.206 179.77 C 214.5 186.628 227.663 56.859 191.918 25.997 Z"></path>
+</svg>
+
 
 </div>
 
@@ -326,7 +325,7 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum cum tenetur pari
     My Projects
   </span>
 </div>
-<div class="w-10/12 h-2/4 animate__animated mx-auto grid grid-cols-2 ">
+<div class="w-10/12 h-2/5 animate__animated mx-auto grid grid-cols-2 ">
   <div id="project1" class="animate__animated  flex justify-center project1">
 
           <a href="../history-of-iran-tour/index.html" class="w-4/5 h-4/5  self-center   bg-clip-border  border-4 border-outline border-yellow-600  hover:border-white p-5  border-outline  ring-yellow-200 hover:ring-black ring ring-3 hover:ring-8 rounded-xl mx-3  bg-[url('/backgrand/porgect/theHistoy.png')] bg-cover bg-center">
@@ -340,7 +339,7 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum cum tenetur pari
 </a>
 
 
-<div class="w-10/12 h-2/4 mx-auto grid grid-cols-2">
+<div class="w-10/12 h-2/5 mx-auto grid grid-cols-2">
   <div id="project3" class="flex animate__animated justify-center">
           <a href="../libaryAnimation/" class="w-4/5 h-4/5 bg-clip-border border-4 border-outline   border-yellow-600 hover:border-white ring-yellow-200 ring ring-3 hover:ring-black  hover:ring-8  rounded-xl mx-3 bg-[url('/backgrand/porgect/Screenshot_20230201_190102.png')] bg-cover bg-center"></a>
   </div>
@@ -353,7 +352,6 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum cum tenetur pari
 
 <div class="w-screen h-screen"> 
 <div  id="serviceHtml" class="w-full h-1/2    relative  ">
-  <div class="w-full h-5 bg-gray-600"></div>
   <div class="w-full 1/2 bg-slate-50 z-0">
 </div>
   <!-- <div class="w-52 h-24  left-1/4    bg-blue-300 absolute top-96 rounded-full">
