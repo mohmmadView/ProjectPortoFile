@@ -69,7 +69,7 @@ window.onscroll=()=>{
   //   mySkillElm.classList.remove("animate__backInLeft");
   // }
 }
-
+// ? scroll eventListener function
 function winScroll(number,element,classId) {
   if (window.scrollY > number) {
     element.classList.add(classId);
@@ -106,7 +106,7 @@ titleSite.innerHTML="";
 
 
 
-
+//? text and  letter  play loop
 
 var textWrapper = document.querySelector('.ml1 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
