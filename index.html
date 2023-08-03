@@ -10,13 +10,19 @@
     <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
 </head>
 
-<body class=" ">
+<body class="bg-slate-500 bg-blue-grad" >
 
      
-     <header class="w-4/5 mx-auto mt-3">
-      
+     <header class="w-full">
+      <nav class=" w-full h-full flex justify-center ">
+        <a class="text-white p-3 border-x border-yellow-600 hover:bg-yellow-500 rounded-2xl border-dotted" href="#mySkill&About">mySkill</a>
+        <a class="text-white p-3 border-x border-yellow-600 hover:bg-yellow-500 rounded-2xl border-dotted" href="#myProject">myProject</a>
+        <a class="text-white p-3 border-x border-yellow-600 hover:bg-yellow-500 rounded-2xl border-dotted" href="#service">service</a>
+        <a class="text-white p-3 border-x border-yellow-600 hover:bg-yellow-500 rounded-2xl border-dotted" href="#home">Home</a>
+     </nav>
+     
 
-<button id="btnMenu" class="fixed w-15 z-50 h-15 p-2 top-5 bg-yellow-300/75 left-5 rounded-3xl">menu</button>
+<button id="btnMenu" class="fixed  z-50 h-15 p-2 top-5 bg-yellow-300/75 left-5 rounded-3xl">menu</button>
        <!-- <nav id="navHeader" class="fixed left-10"> -->
       <!-- <div class=" w-15 h-15 p-2  bg-blue-300/25  rounded-md">dark mode</div>  -->
       <!--? menuClick -->
@@ -30,22 +36,18 @@
       <div class="w-10 h-10 fixed  rounded-full bg-gray-500"></div> -->
       
       <!-- </nav> -->
-      <div class="flex justify-center ">
-         <a class="text-white p-3 border-x border-yellow-600 hover:bg-yellow-500 rounded-2xl border-dotted" href="#mySkill&About">mySkill</a>
-         <a class="text-white p-3 border-x border-yellow-600 hover:bg-yellow-500 rounded-2xl border-dotted" href="#myProject">myProject</a>
-         <a class="text-white p-3 border-x border-yellow-600 hover:bg-yellow-500 rounded-2xl border-dotted" href="#service">service</a>
-      </div>
-    </header>
+
+    <header/>
 
    
     <main>
- <div class="w-full  grid grid-cols-2  animate__animated animate__zoomIn">
+ <div id="#home" class="w-full h-screen mt-7 grid grid-cols-2  animate__animated animate__zoomIn">
   <div>
   <div class="col  h-36">
            <!--! imageProfile -->
     <div class="flex mb-12 mt-16 justify-center">
-  <div class=" w-52 h-48 bg-[url('/backgrand/me3project.jpg')] bg-cover mt-4 ring-4 ring-black rounded-full border-2  border-yellow-400 relative z-20"></div>
-</div>
+        <div class=" w-52 h-48 bg-[url('/backgrand/mePROJECTEdit.jpg')] bg-cover mt-4 ring-4 ring-black rounded-full border-2  border-yellow-400 relative z-20"></div>
+     </div>
            <!--! imageProfileTitleName -->
          
 <!--? TitleName -->
@@ -310,7 +312,7 @@
 <!--------------->
 
 <div id="AboutMe" class="animate__animated  w-4/5 h-4/5 mx-auto">
-<h1 class="w-full text-4xl mb-5 text-yellow-500 absolute top-16 font-bold text-center">About Me</h1>
+<!-- <h1 class="w-full text-4xl mb-5 text-yellow-500 absolute top-16 font-bold text-center">About Me</h1> -->
 <svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
   <defs></defs>
   <path style="stroke: rgba(0, 0, 0, 0.06); fill: rgba(3, 7, 61, 0.8);" d="M 191.918 25.997 C 164.41 -1.187 76.336 34.602 54.579 6.173 C 6.876 -14.55 -4.748 53.721 6.9 111.311 C 6.515 111.559 7.097 140.797 37.013 179.771 C 64.36 215.398 107.293 217.029 107.293 207.728 C 134.716 176.062 125.406 163.389 188.206 179.77 C 214.5 186.628 227.663 56.859 191.918 25.997 Z"></path>
@@ -419,13 +421,13 @@
 </div>
 
 </div>
-<div class=" h-screen">
+ <div class=" ">
 <h1 class="text-center p-5  bg-gradient-to-r from-orange-700 to-yellow-500  hover:from-yellow-500 hover:to-red-500  text-3xl font-bold">Programming article</h1>
-<!-- <iv class="  bg-gray-800 relative  flex gap-6 snap-x overflow-auto pb-14">
+<iv class="  bg-gray-800 relative  flex gap-6 snap-x overflow-auto pb-14">
   <div class="snap-center shrink-0 w-72  bg-red-400">
     <img src="./backgrand/Background-18.jpg" alt="">
   </div>
-  <div class="snap-center shrink-0 w-72  bg-yellow-400">
+  <div class="snap-center shrink-0 w-72  bg-yellow    <!-- <script src="./app.js"></script>-400">
    <img src="./backgrand/BackgroundPattern54Colour (1).svg" alt="">
   </div>
   <div class="snap-center  shrink-0 w-72 bg-slate-900">
@@ -451,8 +453,10 @@
    
     <img src="./backgrand/Background-18.jpg" alt="">
 
-  </div> -->
-   <div class="containerProgram">
+  </div>
+</div>
+<section class="cardGradient">
+    <div class="containerProgram">
         <div class="box">
           <span class="spanCard"></span>
           <div class="content">
@@ -478,14 +482,15 @@
           </div>
         </div>
       </div>
-</iv>
 </div>
+</div>
+</section>
 
 
 
     </main>
-
+  </body>
+  </html>
     <script src="./node_modules/animejs/lib/anime.min.js"></script>
     <script src="./app.js"></script>
-</body>
-</html>
+
