@@ -78,19 +78,24 @@ window.onscroll=()=>{
   winScroll(578,myAboutElm,"animate__backInRight");
  
 }
-// ? scroll eventListener function
-function winScroll(number,element,classId) {
-  if (window.scrollY > number) {
-    element.classList.add(classId);
-  } else {
-    element.classList.remove(classId);
-  }
+/**
+ * Scroll event listener function.
+ *
+ * @param {number} number - The scroll threshold number.
+ * @param {HTMLElement} element - The element to apply the class to.
+ * @param {string} classId - The class ID to add or remove.
+ * @returns {void}
+ */
+function winScroll(number, element, classId) {
+  element.classList.toggle(classId, window.scrollY > number);
+
 }
 
 let titleSite = document.querySelector(".titleSite");
-let project1El = document.querySelector(".project1");
-project1El.addEventListener("mouseenter",()=>{
-titleSite.innerHTML="the history of iran";
+let project1El = document.querySelector("#myProject");
+project1El.addEventListener("mouseenter",(e)=>{
+  // console.log(e.target);
+// titleSite.innerHTML="the history of iran";
 })
 project1El.addEventListener("mouseleave",()=>{
 titleSite.innerHTML="";
