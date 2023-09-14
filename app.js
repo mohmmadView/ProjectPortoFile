@@ -2,6 +2,11 @@
 let elm_menu = document.querySelector("#btnMenu");
 let isOffMenu = true;
 elm_menu.addEventListener('click',clickMenu);
+/**
+ * Clicks the menu and toggles its visibility.
+ *
+ * @return {undefined} This function does not return anything.
+ */
 function clickMenu(){
     if(isOffMenu===true){
      isOffMenu=false;
@@ -17,6 +22,33 @@ elmHeader.insertAdjacentHTML("beforebegin",`
 </div>
 
 `)
+/**
+ * Toggles the visibility of the menu.
+ *
+ * @return {undefined} This function does not return anything.
+ */
+function toggleMenu() {
+  if (isMenuVisible) {
+    isMenuVisible = false;
+    let navHeader = document.querySelector("#navHeader");
+    let header = document.querySelector("header");
+    header.insertAdjacentHTML(
+      "beforebegin",
+      `
+      <div id="navMenu">
+        <a href="#mySkill" class="w-10 h-10 fixed top-28 left-4 rounded-full bg-gray-500">skill</a>
+        <div class="w-10 h-10 fixed top-24 left-16  rounded-full bg-gray-500"></div>
+        <div class="w-10 h-10 fixed top-16 left-28  rounded-full bg-gray-500"></div>
+        <div class="w-10 h-10 fixed top-4 left-36 rounded-full bg-gray-500"></div>
+      </div>
+    `
+    );
+  } else {
+    let menu = document.querySelector("#navMenu");
+    menu.remove();
+    isMenuVisible = true;
+  }
+}
     }else{
         let menuFix =document.querySelector("#navMenu");
         menuFix.remove();
@@ -29,21 +61,7 @@ elmHeader.insertAdjacentHTML("beforebegin",`
     
 }
 //!MySkill&AboutMe
-//winScroll()
-  // if(window.screenY > 196){
-  //   console.log("test");
 
-
-
-  // }
-// window.addEventListener("scroll",(event)=>{
-
-//  if(window.scrollY >= 678){
-// // window.scrollBy(0,10)
-// // let elmMySkill = document.querySelector("#mySkill");
-// console.log(elmMySkill);
-//  }
-// });
 var mySkillElm = document.querySelector('#mySkill');
 var myAboutElm = document.querySelector('#AboutMe');
 var myProject1 = document.querySelector("#project1");
@@ -51,23 +69,14 @@ var myProject2 = document.querySelector("#project2");
 var myProject3 = document.querySelector("#project3");
 var myProject4 = document.querySelector("#project4");
 window.onscroll=()=>{
-  // if(window.screenY > 96){
-  //   // window.URL('#mySkill&About')
-  //   window.URLSearchParams
-  //   console.log("test");
-  // }
-  // winScroll()
+  
   winScroll(1100,myProject4,"animate__backInUp")
   winScroll(1100,myProject3,"animate__backInUp")
   winScroll(1100,myProject2,"animate__backInDown")
   winScroll(1100,myProject1,"animate__backInDown")
   winScroll(578,mySkillElm,"animate__backInLeft");
   winScroll(578,myAboutElm,"animate__backInRight");
-  // if (window.scrollY > 678) {
-  //   mySkillElm.classList.add("animate__backInLeft");
-  // } else {
-  //   mySkillElm.classList.remove("animate__backInLeft");
-  // }
+ 
 }
 // ? scroll eventListener function
 function winScroll(number,element,classId) {
@@ -77,24 +86,7 @@ function winScroll(number,element,classId) {
     element.classList.remove(classId);
   }
 }
-// function scrollPart(numScroll){
-//   console.log(window.scrollY);
-//   if(window.scrollY >= numScroll){
-//     console.log("test2");
-//    }
-//  else{
-//     console.log("test3");
-//   }
-// }
 
- 
-// function winScroll(number,element,classId) {
-//   if (window.scrollY > number) {
-//     element.classList.add(classId);
-//   } else {
-//     element.classList.remove(classId);
-//   }
-// }
 let titleSite = document.querySelector(".titleSite");
 let project1El = document.querySelector(".project1");
 project1El.addEventListener("mouseenter",()=>{
@@ -103,11 +95,7 @@ titleSite.innerHTML="the history of iran";
 project1El.addEventListener("mouseleave",()=>{
 titleSite.innerHTML="";
 })
-
-
-
 //? text and  letter  play loop
-
 var textWrapper = document.querySelector('.ml1 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 anime.timeline({loop: true})
@@ -135,7 +123,6 @@ anime.timeline({loop: true})
     delay: 1000
   });
 // Wrap every letter in a span
-// Wrap every letter in a span
 var textWrapper = document.querySelector('.ml6 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
@@ -153,19 +140,3 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
-// elm_menu.onclick=()=>{
-//     console.log("test");
-// // let ulElmMenu = document.createElement("ul");
-// elm_nav_header.insertAdjacentElement("beforeend",`
-// <div class=" w-15 h-15 p-2  bg-blue-300/25  rounded-md">dark mode</div>
-//  <div class="w-10 h-10 rounded-full bg-gray-500"></div>
-// <div class="w-10 h-10 rounded-full bg-gray-500"></div>
-// <div class="w-10 h-10 rounded-full bg-gray-500"></div>
-// <div class="w-10 h-10 rounded-full bg-gray-500"></div>
-// <div class="w-10 h-10 rounded-full bg-gray-500"></div>
-// <div class="w-10 h-10 rounded-full bg-gray-500"></div>
-// <div class="w-10 h-10 rounded-full bg-gray-500"></div>
-// `)
-
-
-// }
